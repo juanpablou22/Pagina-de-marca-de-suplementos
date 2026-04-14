@@ -1,0 +1,58 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Fondo PROTEIN VA</title>
+  <desc id="desc">Fondo oscuro deportivo con luces verde neone, rejilla tecnica y formas dinamicas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090909"/>
+      <stop offset="0.55" stop-color="#101112"/>
+      <stop offset="1" stop-color="#030303"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 120) rotate(22) scale(860 620)">
+      <stop stop-color="#D7FC69" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#D7FC69" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1620 880) rotate(-28) scale(760 520)">
+      <stop stop-color="#D7FC69" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#D7FC69" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="1920" height="1080" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.04"/>
+      </feComponentTransfer>
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" stroke="#A8A8A8" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="beam" x1="350" y1="150" x2="1520" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7FC69" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#D7FC69" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect width="1920" height="1080" fill="url(#pulse)"/>
+  <rect width="1920" height="1080" fill="url(#rightGlow)"/>
+
+  <g opacity="0.8">
+    <path d="M-180 840L640 320L1170 540L2130 -90" stroke="#D7FC69" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M-120 980L700 460L1280 700L2150 140" stroke="#D7FC69" stroke-opacity="0.1" stroke-width="1"/>
+  </g>
+
+  <g opacity="0.65">
+    <circle cx="350" cy="650" r="190" stroke="#D7FC69" stroke-opacity="0.22" stroke-width="2"/>
+    <circle cx="350" cy="650" r="250" stroke="#D7FC69" stroke-opacity="0.14" stroke-width="1.5"/>
+    <circle cx="350" cy="650" r="310" stroke="#D7FC69" stroke-opacity="0.1" stroke-width="1"/>
+  </g>
+
+  <g opacity="0.45">
+    <rect x="590" y="160" width="1070" height="400" transform="rotate(14 590 160)" fill="url(#beam)"/>
+    <rect x="480" y="290" width="980" height="290" transform="rotate(14 480 290)" fill="url(#beam)" opacity="0.7"/>
+  </g>
+
+  <text x="80" y="1010" fill="#D7FC69" fill-opacity="0.18" font-family="Lexend, Manrope, sans-serif" font-size="180" font-weight="900" letter-spacing="14">PROTEIN VA</text>
+
+  <rect width="1920" height="1080" filter="url(#grain)" opacity="0.9"/>
+</svg>

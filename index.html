@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="PROTEIN VA es una marca informativa de suplementacion y rendimiento deportivo con enfoque en calidad, evidencia y asesoria experta."
+		/>
+		<meta name="robots" content="index,follow" />
+		<meta name="theme-color" content="#0e0e0e" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="PROTEIN VA" />
+		<meta
+			property="og:description"
+			content="Conoce productos, beneficios y contacto de PROTEIN VA en una experiencia informativa de alto rendimiento."
+		/>
+		<meta property="og:image" content="./Gemini_Generated_Image_f0k8bbf0k8bbf0k8.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<title>PROTEIN VA</title>
+
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preload" as="image" href="./Gemini_Generated_Image_f0k8bbf0k8bbf0k8.png" />
+		<link rel="preload" as="image" href="./logo%20definitivoo.png" />
+
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800;900&family=Manrope:wght@400;500;700;800&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+		/>
+
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: "class",
+				theme: {
+					extend: {
+						colors: {
+							"on-secondary-fixed": "#580079",
+							background: "#0e0e0e",
+							primary: "#d7fc69",
+							"on-tertiary": "#526700",
+							outline: "#757575",
+							"on-tertiary-container": "#4b5e00",
+							"inverse-surface": "#f9f9f9",
+							"tertiary-container": "#d0fb3b",
+							secondary: "#d97dff",
+							"tertiary-fixed-dim": "#c5f02e",
+							"on-secondary-container": "#f0bfff",
+							"tertiary-dim": "#c5f02e",
+							"primary-container": "#8cac1f",
+							"secondary-container": "#721199",
+							"on-primary": "#4b6000",
+							"secondary-fixed": "#f0c1ff",
+							surface: "#0e0e0e",
+							error: "#ff7351",
+							"on-surface": "#ffffff",
+							"inverse-primary": "#516700",
+							"surface-container-high": "#1f1f1f",
+							"primary-dim": "#caee5d",
+							"surface-dim": "#0e0e0e",
+							"on-surface-variant": "#ababab",
+							"surface-container-highest": "#262626",
+							"on-error-container": "#ffd2c8",
+							"on-secondary": "#41005b",
+							"surface-container": "#191919",
+							"surface-bright": "#2c2c2c",
+							"surface-container-lowest": "#000000",
+							"secondary-fixed-dim": "#eaaeff",
+							"surface-container-low": "#131313",
+							"tertiary-fixed": "#d3fe3e",
+							"secondary-dim": "#d378f9",
+							"outline-variant": "#484848",
+							"surface-tint": "#d7fc69",
+							"surface-variant": "#262626",
+							"on-background": "#ffffff",
+							"on-secondary-fixed-variant": "#7d21a4",
+							"inverse-on-surface": "#555555",
+							"on-error": "#450900",
+							"error-container": "#b92902",
+						},
+						borderRadius: {
+							DEFAULT: "0.125rem",
+							lg: "0.25rem",
+							xl: "0.5rem",
+							full: "0.75rem",
+						},
+						fontFamily: {
+							headline: ["Lexend"],
+							body: ["Manrope"],
+							label: ["Manrope"],
+						},
+					},
+				},
+			};
+		</script>
+
+		<style>
+			:root {
+				--site-bg-image: url("./Gemini_Generated_Image_f0k8bbf0k8bbf0k8.png");
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				position: relative;
+				min-height: 100vh;
+			}
+
+			body::before {
+				content: "";
+				position: fixed;
+				inset: 0;
+				z-index: -2;
+				background-image: var(--site-bg-image);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				filter: saturate(0.95) contrast(1.04) brightness(0.52);
+				transform: scale(1.03);
+			}
+
+			.brand-lockup {
+				display: flex;
+				align-items: center;
+				gap: 0.8rem;
+			}
+
+			.top-nav {
+				background:
+					linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(3, 3, 3, 0.72) 62%, rgba(8, 8, 8, 0.32) 100%);
+				backdrop-filter: blur(14px) saturate(1.05);
+				-webkit-backdrop-filter: blur(14px) saturate(1.05);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+				box-shadow: 0 16px 36px rgba(0, 0, 0, 0.58);
+			}
+
+			.brand-logo {
+				height: 3rem;
+				width: auto;
+				max-width: min(46vw, 15rem);
+				display: block;
+				filter: drop-shadow(0 0 12px rgba(88, 255, 132, 0.28));
+			}
+
+			.footer-logo {
+				height: 3.1rem;
+				width: auto;
+				max-width: min(70vw, 18rem);
+				display: block;
+				filter: drop-shadow(0 0 10px rgba(88, 255, 132, 0.24));
+			}
+
+			.footer-splash {
+				position: relative;
+				background-color: #000;
+			}
+
+			body::after {
+				content: "";
+				position: fixed;
+				inset: 0;
+				z-index: -1;
+				background:
+					radial-gradient(circle at top left, rgba(215, 252, 105, 0.14), transparent 35%),
+					linear-gradient(180deg, rgba(14, 14, 14, 0.72) 0%, rgba(14, 14, 14, 0.9) 45%, rgba(14, 14, 14, 0.96) 100%);
+			}
+
+			main,
+			footer,
+			nav {
+				position: relative;
+				z-index: 1;
+			}
+
+			.material-symbols-outlined {
+				font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+			}
+
+			.shear-btn {
+				transform: skewX(-10deg);
+			}
+
+			.shear-btn-inner {
+				transform: skewX(10deg);
+			}
+
+			@media (max-width: 640px) {
+				.brand-logo {
+					height: 2.5rem;
+				}
+
+				.footer-logo {
+					height: 2.8rem;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="bg-background font-body text-on-background selection:bg-primary selection:text-on-primary antialiased">
+		<a
+			href="#contenido-principal"
+			class="sr-only z-[60] bg-primary px-4 py-2 font-headline text-sm font-bold text-on-primary focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
+			>Saltar al contenido principal</a
+		>
+		<div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 bg-gradient-to-b from-black/10 via-transparent to-black/40"></div>
+		<!-- Top Navigation -->
+		<nav
+			class="top-nav fixed top-0 z-50 w-full"
+			aria-label="Navegacion principal"
+		>
+			<div class="mx-auto flex max-w-full items-center justify-between px-8 py-6">
+				<a href="#inicio" class="brand-lockup" aria-label="PROTEIN VA inicio">
+					<img src="./logo%20definitivoo.png" alt="Logo PROTEIN VA" class="brand-logo" />
+				</a>
+
+				<div class="hidden items-center gap-8 md:flex">
+					<a
+						href="#inicio"
+						class="border-b-4 border-[#d7fc69] pb-1 font-headline font-bold uppercase tracking-tighter text-[#d7fc69] transition-transform duration-200 hover:skew-x-[-6deg]"
+						>Inicio</a
+					>
+					<a
+						href="#productos"
+						class="font-headline font-bold uppercase tracking-tighter text-zinc-400 transition-transform duration-200 hover:skew-x-[-6deg] hover:text-[#d7fc69]"
+						>Productos</a
+					>
+					<a
+						href="#beneficios"
+						class="font-headline font-bold uppercase tracking-tighter text-zinc-400 transition-transform duration-200 hover:skew-x-[-6deg] hover:text-[#d7fc69]"
+						>Beneficios</a
+					>
+					<a
+						href="#contacto"
+						class="font-headline font-bold uppercase tracking-tighter text-zinc-400 transition-transform duration-200 hover:skew-x-[-6deg] hover:text-[#d7fc69]"
+						>Contacto</a
+					>
+				</div>
+
+				<div class="flex items-center gap-6">
+					<a href="#productos" aria-label="Ir a productos" class="text-zinc-400 transition-colors hover:text-primary">
+						<span class="material-symbols-outlined">search</span>
+					</a>
+					<a href="#contacto" aria-label="Ir a contacto" class="text-zinc-400 transition-colors hover:text-primary">
+						<span class="material-symbols-outlined">person</span>
+					</a>
+					<a
+						href="#contacto"
+						class="rounded border border-primary/40 px-4 py-2 font-headline text-xs font-bold uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary hover:text-on-primary"
+						>Contacto</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<main id="contenido-principal" class="relative">
+			<!-- Hero Section -->
+			<section id="inicio" class="relative min-h-screen overflow-hidden pt-20">
+				<div class="absolute inset-0 z-0">
+					<img
+						src="./Gemini_Generated_Image_f0k8bbf0k8bbf0k8.png"
+						data-alt="fondo deportivo oscuro con lineas dinamicas y luz verde neone"
+						class="h-full w-full object-cover object-center opacity-65"
+						alt="Fondo deportivo PROTEIN VA"
+						fetchpriority="high"
+					/>
+					<div class="absolute inset-0 bg-gradient-to-r from-background via-background/55 to-transparent md:via-background/35"></div>
+					<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/70"></div>
+				</div>
+
+				<div class="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center px-8 py-16 md:grid-cols-12 md:px-16">
+					<div class="md:col-span-6 lg:col-span-5">
+						<div class="max-w-xl rounded-none bg-black/20 p-0 pr-4 md:rounded-2xl md:bg-black/10 md:p-8 md:pr-10">
+							<h1
+								class="font-headline text-[4.2rem] leading-[0.9] font-black uppercase italic tracking-tighter text-white drop-shadow-2xl md:text-[7rem]"
+							>
+								DESATA <br />
+								<span class="text-primary">TU PODER</span>
+							</h1>
+
+							<p class="mt-6 max-w-xl text-lg font-medium leading-relaxed text-zinc-300 md:text-2xl">
+								Performance de grado industrial. Suplementos disenados para la elite que no acepta menos que la
+								dominacion total.
+							</p>
+
+							<div class="mt-10 flex flex-wrap gap-6">
+								<a
+									href="#contacto"
+									class="shear-btn bg-primary px-10 py-5 font-headline font-extrabold uppercase tracking-widest text-on-primary transition-all hover:bg-white active:scale-95"
+								>
+									<span class="shear-btn-inner block">Solicitar asesoria</span>
+								</a>
+								<a
+									href="#productos"
+									class="shear-btn border-2 border-primary px-10 py-5 font-headline font-extrabold uppercase tracking-widest text-primary transition-all hover:bg-primary/10"
+								>
+									<span class="shear-btn-inner block">Ver informacion</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="hidden md:col-span-6 md:block"></div>
+				</div>
+			</section>
+
+			<!-- Categories: Kinetic Bento -->
+			<section id="productos" class="mx-auto max-w-7xl px-8 py-24">
+				<div class="grid h-auto grid-cols-1 gap-6 md:h-[600px] md:grid-cols-12">
+					<div
+						class="category-trigger group relative cursor-pointer overflow-hidden rounded-lg border-l-4 border-primary bg-surface-container transition-all hover:translate-y-[-4px] md:col-span-8"
+						data-section-filter="suplementos"
+						role="button"
+						tabindex="0"
+						aria-label="Ver suplementos"
+					>
+						<img
+							src="./assets/suplementos-deportivos.jpg"
+							data-alt="sports supplement products with protein powder and gym context"
+							class="absolute inset-0 h-full w-full object-cover object-center opacity-40 grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
+							alt="Suplementos premium"
+							loading="lazy"
+							decoding="async"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
+						<div class="relative flex h-full flex-col justify-end p-10">
+							<h2 class="mb-4 font-headline text-5xl font-black uppercase italic text-white">Suplementos</h2>
+							<p class="mb-6 max-w-md text-zinc-400">
+								Formulas de alta concentracion para el maximo rendimiento biologico.
+							</p>
+							<span
+								class="flex items-center gap-2 font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4"
+								>Ver productos <span class="material-symbols-outlined">arrow_forward</span></span
+							>
+						</div>
+					</div>
+
+					<div class="space-y-6 md:col-span-4">
+						<div
+							class="category-trigger group relative h-1/2 cursor-pointer overflow-hidden rounded-lg border-l-4 border-secondary bg-surface-container transition-all hover:translate-y-[-4px]"
+							data-section-filter="productos"
+							role="button"
+							tabindex="0"
+							aria-label="Ver productos"
+						>
+							<img
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5V1uvjAx8NZuycuZ5B1QuKaTKdSzApUNGBq9AWJ7UN6kJGpH5RdQBOU99i9Sb8NW6UICm99Z7-pqXYdBjFV8nFzbxhZGSe0zFC1kh9N4YAe7_WTzEVr0CULFyk7Sc0qQulCSwWOIdkrmAjvtg7UKegWaAtBwrBAF-G6H68H1awiYac2_gUphmJlY6PdvvS3JpSgO2DVTFJQN57d8x8T_90xSY75O_aUG7f-bTyHrITObCBq5rjpp2_8m-x1KHxNrKYsXuQdryaD9P"
+								data-alt="clean minimal shot of raw natural health ingredients like green tea and adaptogens in dark glass containers"
+								class="absolute inset-0 h-full w-full object-cover opacity-30 grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0"
+								alt="Productos naturales"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+							<div class="relative flex h-full flex-col justify-end p-8">
+								<h2 class="font-headline text-3xl font-black uppercase italic text-white">Productos Naturales</h2>
+								<span class="mt-2 font-bold uppercase tracking-widest text-secondary">Ver productos</span>
+							</div>
+						</div>
+
+						<div
+							class="category-trigger group relative h-1/2 cursor-pointer overflow-hidden rounded-lg border-l-4 border-white bg-surface-container transition-all hover:translate-y-[-4px]"
+							data-section-filter="accesorios"
+							role="button"
+							tabindex="0"
+							aria-label="Ver accesorios"
+						>
+							<img
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiVjzaegBx6GJx51XLySe0SOA_mTS3Cg7A0LUGNTD6Po95FCxNADdtDB-AVGLeJ_IT1rb8ex_PU96d6DAtRVAeW6z_SXqASlqX2_oorHlpCI1bwp-i3VFJ32vfX2BvLAERxkr_2L6QJFAM-lkBOwgFGokXQQiAFdvyzUqfPKFT7kP4pjCdDd_EhRLMke2CEFzaTdTr7hLcoZ5i-HFo_3vPf_jEV0wIZrUpl2hwCEHvaCyct_IQcx6QDW-_NmpuRtZT_Mpx-gvFLRdn"
+								data-alt="close up of heavy duty weightlifting gear, leather belts and straps with rugged textures"
+								class="absolute inset-0 h-full w-full object-cover opacity-30 grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0"
+								alt="Accesorios de gimnasio"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+							<div class="relative flex h-full flex-col justify-end p-8">
+								<h2 class="font-headline text-3xl font-black uppercase italic text-white">Accesorios Gym</h2>
+								<span class="mt-2 font-bold uppercase tracking-widest text-white">Ver productos</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Featured Products -->
+			<section id="catalogo-productos" class="bg-surface-container-low py-24">
+				<div class="mx-auto max-w-7xl px-8">
+					<div class="mb-12 flex flex-col gap-6 md:mb-16 md:flex-row md:items-end md:justify-between">
+						<div>
+							<span class="text-sm font-bold uppercase tracking-[0.3em] text-primary">Guia tecnica</span>
+							<h2 class="mt-2 font-headline text-5xl font-black uppercase italic text-white">Productos disponibles</h2>
+						</div>
+						<div class="flex flex-wrap gap-3">
+							<button
+								type="button"
+								data-product-filter="todos"
+								class="product-filter-btn rounded border border-primary bg-primary px-4 py-2 font-headline text-xs font-bold uppercase tracking-[0.2em] text-on-primary"
+							>
+								Todos
+							</button>
+							<button
+								type="button"
+								data-product-filter="suplementos"
+								class="product-filter-btn rounded border border-primary/40 px-4 py-2 font-headline text-xs font-bold uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary hover:text-on-primary"
+							>
+								Suplementos
+							</button>
+							<button
+								type="button"
+								data-product-filter="accesorios"
+								class="product-filter-btn rounded border border-primary/40 px-4 py-2 font-headline text-xs font-bold uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary hover:text-on-primary"
+							>
+								Accesorios
+							</button>
+							<button
+								type="button"
+								data-product-filter="productos"
+								class="product-filter-btn rounded border border-primary/40 px-4 py-2 font-headline text-xs font-bold uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary hover:text-on-primary"
+							>
+								Productos
+							</button>
+						</div>
+					</div>
+
+					<div id="catalog-grid" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+						<div
+							class="product-card group relative flex flex-col overflow-hidden rounded-lg bg-surface-container-high p-6 transition-all ring-primary/30 hover:ring-2"
+							data-product-card
+							data-category="suplementos"
+						>
+							<div class="absolute left-0 top-0 h-1 w-full bg-primary"></div>
+							<div class="mb-6 aspect-square overflow-hidden bg-[#111]">
+								<img
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi0u86SBmbmvPjg1Irp26T_jXMkFOp6H3MD1ZDWtMoVU2SR1-zcxCF3Iv9fW1n9NG9dMKRZoftXzvdquljZyv22XjW5SPgbBNavT8CV5LCg3kUAIqmRQki18YOg86XiMwVfUiXHEPACPFSdPnDaqvPjP1dos3eSaNsOujGRJhdvR8nwBYHLnOWwow9kXuzZYZC96N0KelEGkhpWgiV-u3FJRIAfOZaJntYzJUrN1FiIGIH8EVkUwbVG7qOTYKj8NLTV3KfKy9AITNX"
+									data-alt="black tub of premium whey protein isolate with bright green label on a reflective dark surface"
+									class="h-full w-full object-contain transition-transform group-hover:scale-105"
+									alt="Protein Whey"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+							<h3 class="mb-2 font-headline text-xl font-bold text-white">Protein Whey</h3>
+							<p class="mb-4 text-sm text-zinc-500">Aislado de alta pureza 25g Proteina</p>
+							<div class="mt-auto flex items-center justify-between">
+								<span class="font-headline text-lg font-black text-primary">Ficha tecnica</span>
+								<button
+									type="button"
+									class="rounded bg-secondary-container px-4 py-3 text-sm font-bold uppercase tracking-widest text-on-secondary-container transition-colors hover:bg-secondary"
+								>
+									Ver detalle
+								</button>
+							</div>
+						</div>
+
+						<div
+							class="product-card group relative flex flex-col overflow-hidden rounded-lg bg-surface-container-high p-6 transition-all ring-primary/30 hover:ring-2"
+							data-product-card
+							data-category="suplementos"
+						>
+							<div class="absolute left-0 top-0 h-1 w-full bg-primary"></div>
+							<div class="mb-6 aspect-square overflow-hidden bg-[#111]">
+								<img
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0YTDBRDllG50B7qV1X8cUJeWfEiYPRdNcDAZrZPJwlLs_beBnu0vrAXPEROkxJDMElsndV5QWzgw6zjczF__OH9UYhUbShHMHfjIBzYdfPIL3x9xE0rmC28_Eb2tSewdxkmjMFWBmrBgpQBHY7pmEmZKl2U8gUoCiyXbzxvPPx0OP1GIuKf5Cum3-mYqoZEy0lR4I3_hGJrgYXkyoQgYdOyNBmApvdGm_2GkBkyh0-l74_yQSzsh6YUpO1vceRl4W0JJv745pKk5F"
+									data-alt="industrial jar of micronized creatine monohydrate with toxic green and neon purple branding"
+									class="h-full w-full object-contain transition-transform group-hover:scale-105"
+									alt="Creatine"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+							<h3 class="mb-2 font-headline text-xl font-bold text-white">Creatine</h3>
+							<p class="mb-4 text-sm text-zinc-500">Micronizada 5000mg Explosion</p>
+							<div class="mt-auto flex items-center justify-between">
+								<span class="font-headline text-lg font-black text-primary">Ficha tecnica</span>
+								<button
+									type="button"
+									class="rounded bg-secondary-container px-4 py-3 text-sm font-bold uppercase tracking-widest text-on-secondary-container transition-colors hover:bg-secondary"
+								>
+									Ver detalle
+								</button>
+							</div>
+						</div>
+
+						<div
+							class="product-card group relative flex flex-col overflow-hidden rounded-lg bg-surface-container-high p-6 transition-all ring-primary/30 hover:ring-2"
+							data-product-card
+							data-category="productos"
+						>
+							<div class="absolute left-0 top-0 h-1 w-full bg-primary"></div>
+							<div class="mb-6 aspect-square overflow-hidden bg-[#111]">
+								<img
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNG7hOPrIv-2gao20XmrjRzkxmcWuWufMfvWlzcCcQsAJqhl6z5NvVLNYSoCL2hk8gP2rgOwXoW9DTGRIJzmR64SStZ8JBjMTo_SpHmMQlxv9ZfoRFT7tD7CE28TkPGhgvIUxofJwxu2tjhBKQ6Sa5UqtirJ8HRRx4fp-SkATTx6xnKAAYH8KeHb1APcGPFsAS_9WWouiqxZYPMWAhh_ajxR1GianDzRIJmwCl7VO6Ir9-QM0Qd6C8WWcHMR1yNrlZ2WosdXFZqXok"
+									data-alt="pre-workout container with aggressive typography and neon highlights against dark background"
+									class="h-full w-full object-contain transition-transform group-hover:scale-105"
+									alt="Pre-workout"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+							<h3 class="mb-2 font-headline text-xl font-bold text-white">Green Blend</h3>
+							<p class="mb-4 text-sm text-zinc-500">Mezcla botanica informativa para bienestar integral</p>
+							<div class="mt-auto flex items-center justify-between">
+								<span class="font-headline text-lg font-black text-primary">Ficha tecnica</span>
+								<button
+									type="button"
+									class="rounded bg-secondary-container px-4 py-3 text-sm font-bold uppercase tracking-widest text-on-secondary-container transition-colors hover:bg-secondary"
+								>
+									Ver detalle
+								</button>
+							</div>
+						</div>
+
+						<div
+							class="product-card group relative flex flex-col overflow-hidden rounded-lg bg-surface-container-high p-6 transition-all ring-primary/30 hover:ring-2"
+							data-product-card
+							data-category="accesorios"
+						>
+							<div class="absolute left-0 top-0 h-1 w-full bg-primary"></div>
+							<div class="mb-6 aspect-square overflow-hidden bg-[#111]">
+								<img
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQuK4pv5ckJkvZtboS-Z1Mef7PMimDD-NJomCRS7dSQ3r_-YBAItWukUbvJMSB9MuAiIAizIaHxI4VT29HORgHAFB7ebVMLjj35zyMxh1DuiOpPYN7LL0pA7DHEti_y2M8tejt_R76MHBcRv2JQUNNbbMADGpx7jlYhuLWO22-idInJjhMCirOrqVoiYI7iAh8W4035Xb4z_2kArvYUCHEXjN74mpGnMaDjZ-4MdgbGy9GueBA6KhG0YEMiQQi2lR7M1zN-lihIJi7"
+									data-alt="professional grade black leather lifting belt with heavy steel buckle and engraved protein va logo"
+									class="h-full w-full object-contain transition-transform group-hover:scale-105"
+									alt="Gym Belt"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+							<h3 class="mb-2 font-headline text-xl font-bold text-white">Gym Belt</h3>
+							<p class="mb-4 text-sm text-zinc-500">Cuero Pro Reforzado 10mm</p>
+							<div class="mt-auto flex items-center justify-between">
+								<span class="font-headline text-lg font-black text-primary">Ficha tecnica</span>
+								<button
+									type="button"
+									class="rounded bg-secondary-container px-4 py-3 text-sm font-bold uppercase tracking-widest text-on-secondary-container transition-colors hover:bg-secondary"
+								>
+									Ver detalle
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Benefits Section -->
+			<section id="beneficios" class="mx-auto max-w-7xl border-t border-outline-variant/10 px-8 py-24">
+				<div class="grid grid-cols-1 gap-16 md:grid-cols-3">
+					<div class="flex flex-col items-start gap-4">
+						<div class="rounded-lg bg-primary/10 p-4">
+							<span class="material-symbols-outlined text-4xl text-primary">verified_user</span>
+						</div>
+						<h4 class="font-headline text-2xl font-black uppercase italic text-white">Calidad Certificada</h4>
+						<p class="text-zinc-400">
+							Todos nuestros productos pasan por pruebas de laboratorio rigurosas para garantizar pureza total.
+						</p>
+					</div>
+
+					<div class="flex flex-col items-start gap-4">
+						<div class="rounded-lg bg-primary/10 p-4">
+							<span class="material-symbols-outlined text-4xl text-primary">bolt</span>
+						</div>
+						<h4 class="font-headline text-2xl font-black uppercase italic text-white">Envio Ultra Rapido</h4>
+						<p class="text-zinc-400">
+							Logistica optimizada para que tu suplementacion no se detenga nunca. Entregas en 24/48h.
+						</p>
+					</div>
+
+					<div class="flex flex-col items-start gap-4">
+						<div class="rounded-lg bg-primary/10 p-4">
+							<span class="material-symbols-outlined text-4xl text-primary">support_agent</span>
+						</div>
+						<h4 class="font-headline text-2xl font-black uppercase italic text-white">Asesoria Experta</h4>
+						<p class="text-zinc-400">
+							No sabes que elegir? Nuestros expertos en nutricion te guian hacia tus objetivos reales.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Newsletter Section -->
+			<section id="contacto" class="px-8 py-24">
+				<div
+					class="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 overflow-hidden rounded-lg bg-primary p-12 md:flex-row md:p-24"
+				>
+					<div class="pointer-events-none absolute inset-0 opacity-10">
+						<div class="grid h-full grid-cols-6">
+							<div class="border-r border-on-primary"></div>
+							<div class="border-r border-on-primary"></div>
+							<div class="border-r border-on-primary"></div>
+							<div class="border-r border-on-primary"></div>
+							<div class="border-r border-on-primary"></div>
+						</div>
+					</div>
+
+					<div class="relative z-10 text-center md:text-left">
+						<h2 class="font-headline text-5xl font-black uppercase italic tracking-tighter text-[#3f5a00] md:text-7xl">
+							Escribenos para<br />mayor informacion
+						</h2>
+						<p class="mt-4 max-w-md text-xl font-bold text-[#3f5a00]/90">
+							Atencion directa por WhatsApp para resolver dudas sobre productos, rutinas y asesoria deportiva.
+						</p>
+					</div>
+
+					<div class="relative z-10 w-full md:w-auto">
+						<div class="flex flex-col gap-4 sm:items-start">
+							<a
+								href="https://wa.me/573148955142?text=Hola%20Protein%20VA,%20quiero%20mas%20informacion"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="shear-btn inline-flex items-center gap-3 bg-secondary-container px-8 py-6 font-black uppercase italic tracking-widest text-white transition-all hover:bg-on-primary-container"
+							>
+								<span class="shear-btn-inner inline-flex items-center gap-3">
+									<svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+										<path d="M20.52 3.48A11.88 11.88 0 0 0 12.05 0C5.49 0 .16 5.33.16 11.89c0 2.09.55 4.12 1.58 5.9L0 24l6.4-1.67a11.87 11.87 0 0 0 5.65 1.44h.01c6.56 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.17-3.43-8.4zM12.06 21.7h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.8 1 1.01-3.7-.24-.38a9.8 9.8 0 0 1-1.5-5.16c0-5.42 4.41-9.83 9.84-9.83a9.74 9.74 0 0 1 6.95 2.88 9.75 9.75 0 0 1 2.87 6.95c0 5.42-4.41 9.83-9.84 9.83zm5.39-7.35c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.19.05-.37-.02-.52-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.49.07-.75.37-.26.29-.98.95-.98 2.31s1 2.67 1.14 2.86c.15.19 1.96 2.98 4.74 4.17.66.29 1.18.47 1.58.6.67.21 1.28.18 1.76.11.54-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34z" />
+									</svg>
+									Escribenos por WhatsApp
+								</span>
+							</a>
+							<a
+								href="https://wa.me/573148955142"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="text-sm font-bold text-[#3f5a00]/90 hover:text-[#3f5a00]"
+								>Escribenos, te atenderemos con gusto.</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer-splash w-full border-t-2 border-[#1f1f1f] px-8 py-16">
+			<div class="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 md:grid-cols-4">
+				<div class="space-y-6">
+					<img src="./logo%20definitivoo.png" alt="Logo PROTEIN VA" class="footer-logo" />
+					<p class="text-sm font-medium tracking-normal text-zinc-500">
+						Informacion de alto rendimiento para atletas que no se rinden. La ciencia de la fuerza en cada contenido.
+					</p>
+
+					<div class="flex gap-4">
+						<div
+							class="flex h-10 w-10 cursor-pointer items-center justify-center rounded bg-surface-container text-primary transition-colors hover:bg-primary hover:text-on-primary"
+						>
+							<span class="material-symbols-outlined">social_distance</span>
+						</div>
+						<div
+							class="flex h-10 w-10 cursor-pointer items-center justify-center rounded bg-surface-container text-primary transition-colors hover:bg-primary hover:text-on-primary"
+						>
+							<span class="material-symbols-outlined">camera</span>
+						</div>
+						<div
+							class="flex h-10 w-10 cursor-pointer items-center justify-center rounded bg-surface-container text-primary transition-colors hover:bg-primary hover:text-on-primary"
+						>
+							<span class="material-symbols-outlined">play_circle</span>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<h5 class="mb-6 font-black uppercase italic tracking-widest text-white">Navegacion</h5>
+					<ul class="space-y-4 text-sm font-medium tracking-normal font-lexend">
+						<li><a href="#inicio" class="text-zinc-500 transition-colors hover:text-white">Inicio</a></li>
+						<li><a href="#productos" class="text-zinc-500 transition-colors hover:text-white">Productos</a></li>
+						<li><a href="#beneficios" class="text-zinc-500 transition-colors hover:text-white">Beneficios</a></li>
+						<li><a href="#contacto" class="text-zinc-500 transition-colors hover:text-white">Contacto</a></li>
+						<li><a href="#contacto" class="text-zinc-500 transition-colors hover:text-white">Newsletter</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h5 class="mb-6 font-black uppercase italic tracking-widest text-white">Legal</h5>
+					<ul class="space-y-4 text-sm font-medium tracking-normal font-lexend">
+						<li><a href="#productos" class="text-zinc-500 transition-colors hover:text-white">Ficha de productos</a></li>
+						<li><a href="#beneficios" class="text-zinc-500 transition-colors hover:text-white">Calidad y procesos</a></li>
+						<li><a href="#contacto" class="text-zinc-500 transition-colors hover:text-white">Soporte</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h5 class="mb-6 font-black uppercase italic tracking-widest text-white">Contacto</h5>
+					<ul class="space-y-4 text-sm font-medium tracking-normal font-lexend">
+						<li class="flex items-center gap-3 text-zinc-500">
+							<span class="material-symbols-outlined text-sm text-primary">mail</span>
+							<span>elite@proteinva.com</span>
+						</li>
+						<li class="flex items-center gap-3 text-zinc-500">
+							<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+							<span>Industrial District, Block G</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="mt-16 border-t border-outline-variant/10 pt-8 text-center">
+				<p class="text-sm font-medium uppercase tracking-normal text-zinc-600 font-lexend">
+					© 2024 PROTEIN VA. GAMMA-IRRADIATED PERFORMANCE.
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			(function () {
+				const filterButtons = document.querySelectorAll("[data-product-filter]");
+				const productCards = document.querySelectorAll("[data-product-card]");
+				const sectionTriggers = document.querySelectorAll("[data-section-filter]");
+				const catalogSection = document.getElementById("catalogo-productos");
+
+				function setActiveFilterButton(filter) {
+					filterButtons.forEach((button) => {
+						const isActive = button.dataset.productFilter === filter;
+						button.classList.toggle("bg-primary", isActive);
+						button.classList.toggle("text-on-primary", isActive);
+						button.classList.toggle("border-primary", isActive);
+						button.classList.toggle("text-primary", !isActive);
+						button.classList.toggle("border-primary/40", !isActive);
+					});
+				}
+
+				function applyFilter(filter) {
+					productCards.forEach((card) => {
+						const categoryTokens = (card.dataset.category || "").split(" ");
+						const shouldShow = filter === "todos" || categoryTokens.includes(filter);
+						card.classList.toggle("hidden", !shouldShow);
+					});
+
+					setActiveFilterButton(filter);
+				}
+
+				filterButtons.forEach((button) => {
+					button.addEventListener("click", () => {
+						applyFilter(button.dataset.productFilter);
+					});
+				});
+
+				sectionTriggers.forEach((trigger) => {
+					const openFilter = () => {
+						applyFilter(trigger.dataset.sectionFilter);
+						catalogSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+					};
+
+					trigger.addEventListener("click", openFilter);
+					trigger.addEventListener("keydown", (event) => {
+						if (event.key === "Enter" || event.key === " ") {
+							event.preventDefault();
+							openFilter();
+						}
+					});
+				});
+
+				applyFilter("todos");
+			})();
+		</script>
+	</body>
+</html>

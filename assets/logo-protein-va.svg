@@ -1,0 +1,33 @@
+<svg width="640" height="220" viewBox="0 0 640 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo PROTEIN VA</title>
+  <desc id="desc">Logotipo con emblema geometrico y palabra PROTEIN VA.</desc>
+  <defs>
+    <linearGradient id="neon" x1="42" y1="32" x2="156" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2FF9B"/>
+      <stop offset="1" stop-color="#B8E918"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2F2F2F"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="24" y="24" width="152" height="172" rx="26" fill="url(#steel)" stroke="#474747" stroke-width="2"/>
+  <path d="M54 43H146L132 99L146 177H57L43 99L54 43Z" fill="#0E0E0E" stroke="#313131" stroke-width="2"/>
+  <g filter="url(#glow)">
+    <path d="M67 62H110L93 101H123L79 157H104L91 178H54L86 127H59L82 84H64L67 62Z" fill="url(#neon)"/>
+  </g>
+  <path d="M113 62H149L137 93H156L130 129H148L128 167H96L126 120H108L133 87H119L113 62Z" fill="#D6FB67" opacity="0.72"/>
+
+  <text x="206" y="104" fill="#FFFFFF" font-family="Lexend, Manrope, sans-serif" font-size="66" font-weight="900" letter-spacing="1.5">PROTEIN</text>
+  <text x="207" y="170" fill="#D7FC69" font-family="Lexend, Manrope, sans-serif" font-size="66" font-weight="900" letter-spacing="4">VA</text>
+  <rect x="206" y="183" width="390" height="5" fill="#D7FC69" opacity="0.8"/>
+  <text x="206" y="212" fill="#9D9D9D" font-family="Manrope, sans-serif" font-size="16" font-weight="700" letter-spacing="2">NUTRICION DE RENDIMIENTO</text>
+</svg>

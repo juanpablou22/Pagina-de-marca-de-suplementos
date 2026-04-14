@@ -111,6 +111,7 @@
 			body {
 				position: relative;
 				min-height: 100vh;
+				overflow-x: hidden;
 			}
 
 			body::before {
@@ -191,13 +192,26 @@
 				transform: skewX(10deg);
 			}
 
+			.category-trigger {
+				min-height: 15rem;
+			}
+
 			@media (max-width: 640px) {
+				.top-nav {
+					backdrop-filter: blur(10px) saturate(1.02);
+					-webkit-backdrop-filter: blur(10px) saturate(1.02);
+				}
+
 				.brand-logo {
 					height: 2.5rem;
 				}
 
 				.footer-logo {
 					height: 2.8rem;
+				}
+
+				.category-trigger {
+					min-height: 16.5rem;
 				}
 			}
 		</style>
@@ -211,11 +225,8 @@
 		>
 		<div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 bg-gradient-to-b from-black/10 via-transparent to-black/40"></div>
 		<!-- Top Navigation -->
-		<nav
-			class="top-nav fixed top-0 z-50 w-full"
-			aria-label="Navegacion principal"
-		>
-			<div class="mx-auto flex max-w-full items-center justify-between px-8 py-6">
+		<nav class="top-nav fixed top-0 z-50 w-full" aria-label="Navegacion principal">
+			<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 md:px-8 md:py-6">
 				<a href="#inicio" class="brand-lockup" aria-label="PROTEIN VA inicio">
 					<img src="./logo%20definitivoo.png" alt="Logo PROTEIN VA" class="brand-logo" />
 				</a>
@@ -243,7 +254,7 @@
 					>
 				</div>
 
-				<div class="flex items-center gap-6">
+				<div class="hidden items-center gap-6 sm:flex">
 					<a href="#productos" aria-label="Ir a productos" class="text-zinc-400 transition-colors hover:text-primary">
 						<span class="material-symbols-outlined">search</span>
 					</a>
@@ -256,12 +267,32 @@
 						>Contacto</a
 					>
 				</div>
+
+				<button
+					id="mobile-menu-toggle"
+					type="button"
+					class="inline-flex items-center justify-center rounded border border-primary/30 p-2 text-primary transition-colors hover:bg-primary hover:text-on-primary md:hidden"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					aria-label="Abrir menu principal"
+				>
+					<span class="material-symbols-outlined">menu</span>
+				</button>
+			</div>
+
+			<div id="mobile-menu" class="hidden border-t border-white/10 bg-black/80 px-4 py-4 md:hidden">
+				<div class="flex flex-col gap-3">
+					<a href="#inicio" class="mobile-nav-link font-headline font-bold uppercase tracking-wider text-zinc-200">Inicio</a>
+					<a href="#productos" class="mobile-nav-link font-headline font-bold uppercase tracking-wider text-zinc-200">Productos</a>
+					<a href="#beneficios" class="mobile-nav-link font-headline font-bold uppercase tracking-wider text-zinc-200">Beneficios</a>
+					<a href="#contacto" class="mobile-nav-link font-headline font-bold uppercase tracking-wider text-zinc-200">Contacto</a>
+				</div>
 			</div>
 		</nav>
 
 		<main id="contenido-principal" class="relative">
 			<!-- Hero Section -->
-			<section id="inicio" class="relative min-h-screen overflow-hidden pt-20">
+			<section id="inicio" class="relative min-h-screen overflow-hidden pt-24 md:pt-20">
 				<div class="absolute inset-0 z-0">
 					<img
 						src="./Gemini_Generated_Image_f0k8bbf0k8bbf0k8.png"
@@ -274,31 +305,31 @@
 					<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/70"></div>
 				</div>
 
-				<div class="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center px-8 py-16 md:grid-cols-12 md:px-16">
+				<div class="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center px-4 py-14 sm:px-6 md:grid-cols-12 md:px-16 md:py-16">
 					<div class="md:col-span-6 lg:col-span-5">
-						<div class="max-w-xl rounded-none bg-black/20 p-0 pr-4 md:rounded-2xl md:bg-black/10 md:p-8 md:pr-10">
+						<div class="max-w-xl rounded-none bg-black/20 p-0 pr-1 sm:pr-4 md:rounded-2xl md:bg-black/10 md:p-8 md:pr-10">
 							<h1
-								class="font-headline text-[4.2rem] leading-[0.9] font-black uppercase italic tracking-tighter text-white drop-shadow-2xl md:text-[7rem]"
+								class="font-headline text-[2.6rem] leading-[0.9] font-black uppercase italic tracking-tighter text-white drop-shadow-2xl sm:text-[3.4rem] md:text-[7rem]"
 							>
 								DESATA <br />
 								<span class="text-primary">TU PODER</span>
 							</h1>
 
-							<p class="mt-6 max-w-xl text-lg font-medium leading-relaxed text-zinc-300 md:text-2xl">
+							<p class="mt-5 max-w-xl text-base font-medium leading-relaxed text-zinc-300 sm:text-lg md:mt-6 md:text-2xl">
 								Performance de grado industrial. Suplementos disenados para la elite que no acepta menos que la
 								dominacion total.
 							</p>
 
-							<div class="mt-10 flex flex-wrap gap-6">
+							<div class="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-6">
 								<a
 									href="#contacto"
-									class="shear-btn bg-primary px-10 py-5 font-headline font-extrabold uppercase tracking-widest text-on-primary transition-all hover:bg-white active:scale-95"
+									class="shear-btn bg-primary px-8 py-4 text-center font-headline text-sm font-extrabold uppercase tracking-[0.14em] text-on-primary transition-all hover:bg-white active:scale-95 sm:px-10 sm:py-5 sm:text-base sm:tracking-widest"
 								>
 									<span class="shear-btn-inner block">Solicitar asesoria</span>
 								</a>
 								<a
 									href="#productos"
-									class="shear-btn border-2 border-primary px-10 py-5 font-headline font-extrabold uppercase tracking-widest text-primary transition-all hover:bg-primary/10"
+									class="shear-btn border-2 border-primary px-8 py-4 text-center font-headline text-sm font-extrabold uppercase tracking-[0.14em] text-primary transition-all hover:bg-primary/10 sm:px-10 sm:py-5 sm:text-base sm:tracking-widest"
 								>
 									<span class="shear-btn-inner block">Ver informacion</span>
 								</a>
@@ -311,10 +342,10 @@
 			</section>
 
 			<!-- Categories: Kinetic Bento -->
-			<section id="productos" class="mx-auto max-w-7xl px-8 py-24">
+			<section id="productos" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 md:py-24">
 				<div class="grid h-auto grid-cols-1 gap-6 md:h-[600px] md:grid-cols-12">
 					<div
-						class="category-trigger group relative cursor-pointer overflow-hidden rounded-lg border-l-4 border-primary bg-surface-container transition-all hover:translate-y-[-4px] md:col-span-8"
+						class="category-trigger group relative min-h-[22rem] cursor-pointer overflow-hidden rounded-lg border-l-4 border-primary bg-surface-container transition-all hover:translate-y-[-4px] md:col-span-8 md:min-h-0"
 						data-section-filter="suplementos"
 						role="button"
 						tabindex="0"
@@ -329,8 +360,8 @@
 							decoding="async"
 						/>
 						<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
-						<div class="relative flex h-full flex-col justify-end p-10">
-							<h2 class="mb-4 font-headline text-5xl font-black uppercase italic text-white">Suplementos</h2>
+						<div class="relative flex h-full flex-col justify-end p-6 sm:p-8 md:p-10">
+							<h2 class="mb-3 font-headline text-3xl font-black uppercase italic text-white sm:mb-4 sm:text-4xl md:text-5xl">Suplementos</h2>
 							<p class="mb-6 max-w-md text-zinc-400">
 								Formulas de alta concentracion para el maximo rendimiento biologico.
 							</p>
@@ -343,7 +374,7 @@
 
 					<div class="space-y-6 md:col-span-4">
 						<div
-							class="category-trigger group relative h-1/2 cursor-pointer overflow-hidden rounded-lg border-l-4 border-secondary bg-surface-container transition-all hover:translate-y-[-4px]"
+							class="category-trigger group relative min-h-[14rem] cursor-pointer overflow-hidden rounded-lg border-l-4 border-secondary bg-surface-container transition-all hover:translate-y-[-4px] md:h-1/2 md:min-h-0"
 							data-section-filter="productos"
 							role="button"
 							tabindex="0"
@@ -358,14 +389,14 @@
 								decoding="async"
 							/>
 							<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
-							<div class="relative flex h-full flex-col justify-end p-8">
-								<h2 class="font-headline text-3xl font-black uppercase italic text-white">Productos Naturales</h2>
+							<div class="relative flex h-full flex-col justify-end p-6 sm:p-8">
+								<h2 class="font-headline text-2xl font-black uppercase italic text-white sm:text-3xl">Productos Naturales</h2>
 								<span class="mt-2 font-bold uppercase tracking-widest text-secondary">Ver productos</span>
 							</div>
 						</div>
 
 						<div
-							class="category-trigger group relative h-1/2 cursor-pointer overflow-hidden rounded-lg border-l-4 border-white bg-surface-container transition-all hover:translate-y-[-4px]"
+							class="category-trigger group relative min-h-[14rem] cursor-pointer overflow-hidden rounded-lg border-l-4 border-white bg-surface-container transition-all hover:translate-y-[-4px] md:h-1/2 md:min-h-0"
 							data-section-filter="accesorios"
 							role="button"
 							tabindex="0"
@@ -380,8 +411,8 @@
 								decoding="async"
 							/>
 							<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
-							<div class="relative flex h-full flex-col justify-end p-8">
-								<h2 class="font-headline text-3xl font-black uppercase italic text-white">Accesorios Gym</h2>
+							<div class="relative flex h-full flex-col justify-end p-6 sm:p-8">
+								<h2 class="font-headline text-2xl font-black uppercase italic text-white sm:text-3xl">Accesorios Gym</h2>
 								<span class="mt-2 font-bold uppercase tracking-widest text-white">Ver productos</span>
 							</div>
 						</div>
@@ -390,12 +421,12 @@
 			</section>
 
 			<!-- Featured Products -->
-			<section id="catalogo-productos" class="bg-surface-container-low py-24">
-				<div class="mx-auto max-w-7xl px-8">
+			<section id="catalogo-productos" class="bg-surface-container-low py-16 md:py-24">
+				<div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
 					<div class="mb-12 flex flex-col gap-6 md:mb-16 md:flex-row md:items-end md:justify-between">
 						<div>
 							<span class="text-sm font-bold uppercase tracking-[0.3em] text-primary">Guia tecnica</span>
-							<h2 class="mt-2 font-headline text-5xl font-black uppercase italic text-white">Productos disponibles</h2>
+							<h2 class="mt-2 font-headline text-4xl font-black uppercase italic text-white md:text-5xl">Productos disponibles</h2>
 						</div>
 						<div class="flex flex-wrap gap-3">
 							<button
@@ -550,7 +581,7 @@
 			</section>
 
 			<!-- Benefits Section -->
-			<section id="beneficios" class="mx-auto max-w-7xl border-t border-outline-variant/10 px-8 py-24">
+			<section id="beneficios" class="mx-auto max-w-7xl border-t border-outline-variant/10 px-4 py-16 sm:px-6 md:px-8 md:py-24">
 				<div class="grid grid-cols-1 gap-16 md:grid-cols-3">
 					<div class="flex flex-col items-start gap-4">
 						<div class="rounded-lg bg-primary/10 p-4">
@@ -585,9 +616,9 @@
 			</section>
 
 			<!-- Newsletter Section -->
-			<section id="contacto" class="px-8 py-24">
+			<section id="contacto" class="px-4 py-16 sm:px-6 md:px-8 md:py-24">
 				<div
-					class="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 overflow-hidden rounded-lg bg-primary p-12 md:flex-row md:p-24"
+					class="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 overflow-hidden rounded-lg bg-primary p-8 sm:p-10 md:flex-row md:gap-12 md:p-24"
 				>
 					<div class="pointer-events-none absolute inset-0 opacity-10">
 						<div class="grid h-full grid-cols-6">
@@ -600,10 +631,10 @@
 					</div>
 
 					<div class="relative z-10 text-center md:text-left">
-						<h2 class="font-headline text-5xl font-black uppercase italic tracking-tighter text-[#3f5a00] md:text-7xl">
+						<h2 class="font-headline text-4xl font-black uppercase italic tracking-tighter text-[#3f5a00] sm:text-5xl md:text-7xl">
 							Escribenos para<br />mayor informacion
 						</h2>
-						<p class="mt-4 max-w-md text-xl font-bold text-[#3f5a00]/90">
+						<p class="mt-4 max-w-md text-base font-bold text-[#3f5a00]/90 sm:text-xl">
 							Atencion directa por WhatsApp para resolver dudas sobre productos, rutinas y asesoria deportiva.
 						</p>
 					</div>
@@ -614,7 +645,7 @@
 								href="https://wa.me/573148955142?text=Hola%20Protein%20VA,%20quiero%20mas%20informacion"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="shear-btn inline-flex items-center gap-3 bg-secondary-container px-8 py-6 font-black uppercase italic tracking-widest text-white transition-all hover:bg-on-primary-container"
+								class="shear-btn inline-flex items-center gap-3 bg-secondary-container px-6 py-4 text-sm font-black uppercase italic tracking-[0.14em] text-white transition-all hover:bg-on-primary-container sm:px-8 sm:py-6 sm:text-base sm:tracking-widest"
 							>
 								<span class="shear-btn-inner inline-flex items-center gap-3">
 									<svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
@@ -637,7 +668,7 @@
 		</main>
 
 		<!-- Footer -->
-		<footer class="footer-splash w-full border-t-2 border-[#1f1f1f] px-8 py-16">
+		<footer class="footer-splash w-full border-t-2 border-[#1f1f1f] px-4 py-16 sm:px-6 md:px-8">
 			<div class="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 md:grid-cols-4">
 				<div class="space-y-6">
 					<img src="./logo%20definitivoo.png" alt="Logo PROTEIN VA" class="footer-logo" />
@@ -708,10 +739,37 @@
 
 		<script>
 			(function () {
+				const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+				const mobileMenu = document.getElementById("mobile-menu");
+				const mobileMenuLinks = document.querySelectorAll(".mobile-nav-link");
 				const filterButtons = document.querySelectorAll("[data-product-filter]");
 				const productCards = document.querySelectorAll("[data-product-card]");
 				const sectionTriggers = document.querySelectorAll("[data-section-filter]");
 				const catalogSection = document.getElementById("catalogo-productos");
+
+				function setMobileMenuState(isOpen) {
+					if (!mobileMenu || !mobileMenuToggle) return;
+
+					mobileMenu.classList.toggle("hidden", !isOpen);
+					mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+				}
+
+				mobileMenuToggle?.addEventListener("click", () => {
+					const nextIsOpen = mobileMenuToggle.getAttribute("aria-expanded") !== "true";
+					setMobileMenuState(nextIsOpen);
+				});
+
+				mobileMenuLinks.forEach((link) => {
+					link.addEventListener("click", () => {
+						setMobileMenuState(false);
+					});
+				});
+
+				window.addEventListener("resize", () => {
+					if (window.innerWidth >= 768) {
+						setMobileMenuState(false);
+					}
+				});
 
 				function setActiveFilterButton(filter) {
 					filterButtons.forEach((button) => {
